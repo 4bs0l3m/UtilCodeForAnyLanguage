@@ -40,6 +40,7 @@ export class CacheService{
     for (let index = 0; index < keyStringArr.length-1; index++) {
       keyString += keyStringArr[index]+this.cacheSplitOp;
     }
+    
     keyString += keyStringArr[keyStringArr.length-1];
     return keyString;
   }
